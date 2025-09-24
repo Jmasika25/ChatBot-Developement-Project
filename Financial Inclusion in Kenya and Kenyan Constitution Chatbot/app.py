@@ -8,7 +8,7 @@ from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from langchain.retrievers import ParentDocumentRetriever
 
-os.environ['groq_api_key'] = "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"
+#os.environ['groq_api_key'] = "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"
 
 # ----------------------------
 # Load documents
@@ -69,7 +69,7 @@ retriever.add_documents(documents)
 # ----------------------------
 LLM = ChatGroq(
     model="llama-3.1-8b-instant",
-    api_key=os.getenv("groq_api_key"),
+    #api_key=os.getenv("groq_api_key"),
     temperature=0.5
 )
 
